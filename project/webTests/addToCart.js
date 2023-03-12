@@ -4,7 +4,7 @@ import InventoryPage from '../pageObjects/inventory.page.js';
 
 describe('Add items to cart', () => {
   it('should add item to cart', async ()  => {
-    await LoginPage.open()
+    await LoginPage.open('')
     await LoginPage.login('standard_user', 'secret_sauce')
         
     await InventoryPage.assertCartEmpty()
@@ -16,7 +16,7 @@ describe('Add items to cart', () => {
   })
 
   it('should remove item from cart', async () => {
-    await LoginPage.open()
+    await LoginPage.open('')
     await LoginPage.login('standard_user', 'secret_sauce')
         
     await InventoryPage.assertCartEmpty()
