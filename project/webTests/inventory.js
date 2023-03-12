@@ -3,7 +3,6 @@ import InventoryPage from '../pageObjects/inventory.page.js';
 
 
 describe('Confirm inventory data', () => {
-
   it('should confirm items title', async () => {
     const productTitles = [
       'Sauce Labs Backpack',

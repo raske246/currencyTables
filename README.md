@@ -5,5 +5,8 @@ npm install wdio . --y
 
 #Run tests
 npx wdio wdio.conf.js  - run all tests
-npx wdio wdio.conf.js --spec ./test/specs/login.spec.js - run a specific test
-npx wdio wdio.conf.js --spec ./test/specs/login.spec.js --reporters html - run test with html report
+npx wdio wdio.conf.js --spec ./project/webTests/login.js - run a specific test
+
+allure generate allure-report -generate the report
+alure serve allure-report -open the server with report
+

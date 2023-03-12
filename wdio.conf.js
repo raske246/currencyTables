@@ -25,7 +25,7 @@ export const config = {
     // will be called from there.
     //
     specs: [
-        './test/specs/**/*.js'
+        './project/webTests/**/*.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -62,7 +62,7 @@ export const config = {
         //
         browserName: 'chrome',
         'goog:chromeOptions': {
-            args: ['headless']},
+            args: ['headless', 'incognito']},
         acceptInsecureCerts: true,
         //excludeDriverLogs: ['*']
         // If outputDir is provided WebdriverIO can capture driver session logs
