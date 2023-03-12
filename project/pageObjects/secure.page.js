@@ -1,7 +1,4 @@
-import Page from './page.js';
-
-
-class SecurePage extends Page {
+class SecurePage {
    
     get inventoryPage () {
         return $('span[class="title"]');
