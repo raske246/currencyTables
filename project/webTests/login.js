@@ -1,7 +1,7 @@
 import LoginPage from '../pageObjects/login.page.js'
 import SecurePage from '../pageObjects/secure.page.js'
 
-describe('My Login application', () => {
+describe('Login to the website', () => {
     it('should not open other pages without loging in', async () => {
         await LoginPage.open('')
         await LoginPage.open('inventory.html')
