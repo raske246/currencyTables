@@ -1,19 +1,15 @@
 class LoginPage {
     
     get inputUsername () {
-        return $('#user-name');
+        return $('//*[@id="user-name"]');
     }
 
     get inputPassword () {
-        return $('#password');
+        return $('//*[@id="password"]');
     }
 
     get btnLogin () {
-        return $('#login-button');
-    }
-
-    get menuBtn () {
-        return $('#menu_button_container');
+        return $('//*[@id="login-button"]');
     }
 
     async login (username, password) {
