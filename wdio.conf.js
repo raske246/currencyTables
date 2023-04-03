@@ -6,16 +6,9 @@ export const config = {
   maxInstances: 10,
   capabilities: [
     {
-      maxInstances: 3,
-      browserName: "firefox",
-      "moz:firefoxOptions": {
-        args: ["-headless"]
-      }
-    },
-    {
       browserName: "chrome",
         "goog:chromeOptions": {
-      args: ["headless", "incognito"],
+      args: ["incognito"],
       },
       acceptInsecureCerts: true,
       excludeDriverLogs: ["*"],
@@ -23,7 +16,6 @@ export const config = {
   ],
   logLevel: "debug",
   bail: 0,
-  baseUrl: "https://saucedemo.com",
   waitforTimeout: 10000,
   connectionRetryTimeout: 120000,
   connectionRetryCount: 3,
@@ -34,8 +26,6 @@ export const config = {
       "allure",
       {
         outputDir: "allure-report",
-        // disableWebdriverStepsReporting: true,
-        //disableWebdriverScreenshotsReporting: false
       },
     ],
   ],
@@ -47,8 +37,5 @@ export const config = {
     if (!passed) {
       await browser.takeScreenshot();
     }
-  },
-  hostname: "localhost",
-  port: 4444,
-  path: "/wd/hub",
+  }
 };
