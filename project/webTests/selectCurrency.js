@@ -2,16 +2,6 @@ import MainPage from '../pageObjects/mainPage.js'
 
 
 describe('XE Currency Tables', () => {
-    it('should select currency and date', async () => {
-        await MainPage.open()
-        await MainPage.selectEurCurrency()
-        await MainPage.overrideDateInput('2023-02-01')
-        await MainPage.confirmClick()
-
-        // await expect(MainPage.currencySelectBtn.getValue()).toStrictEqual('EUR');
-        // await expect(MainPage.dateInput.getValue()).toStrictEqual('2023-02-01');
-    })
-
     it('should display eur and gbp units per eur', async () => {
         await MainPage.open()
         await MainPage.selectEurCurrency()
