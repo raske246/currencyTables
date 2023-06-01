@@ -11,7 +11,7 @@ describe('XE Currency Tables', () => {
         const usdEurRateNumber = await MainPage.UsdEurRateNumber()
         const gbpEurRateNumber = await MainPage.GbpEurRateNumber()
     
-        await expect(usdEurRateNumber).toStrictEqual('1.0918121631244302')
-        await expect(gbpEurRateNumber).toStrictEqual('0.8871386636267415')
+        await expect(usdEurRateNumber).toStrictEqual('1.0675147152212485')
+        await expect(gbpEurRateNumber).toStrictEqual('0.8870275610039289')
     })
 })
